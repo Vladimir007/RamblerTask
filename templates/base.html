@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Rambler Task</title>
+        <script type="text/javascript" src="{% static "js/jquery-2.1.4.min.js" %}"></script>
+        <script type="text/javascript" src="{% static 'js/notify.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'semantic/semantic.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+        <link href="{% static 'semantic/semantic.min.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div style="margin: 30px;">
+            {% block body %}{% endblock %}
+        </div>
+    </body>
+</html>

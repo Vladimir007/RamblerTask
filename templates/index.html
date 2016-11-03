@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="ui grid">
+        <div class="four wide column">
+            <h3>Parameters</h3>
+            {% for param in params %}
+                <div class="ui form">
+                    <input id="{{ param }}" class="pickle-param" type="text" placeholder="{{ param }}">
+                </div>
+                <br>
+            {% endfor %}
+            <button id="calc_pickle_btn" class="ui green button">Get class</button>
+        </div>
+        <div class="four wide column">
+            <h3>Pickle file</h3>
+            <div class="ui form">
+                <label for="new_pickle_name">Pickle name</label>
+                <input id="new_pickle_name" type="text" value="{{ pickle }}">
+            </div>
+            <br>
+            <button id="change_pickle_btn" class="ui green button">Change pickle</button>
+        </div>
+    </div>
+{% endblock %}
