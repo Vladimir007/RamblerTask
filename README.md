@@ -10,7 +10,7 @@ in RamblerTask/settings.py else use:
 
 API:
 
-1. Get class:
+ * Get class:
 
 URL: "calc_pickle/"
 TYPE: only POST
