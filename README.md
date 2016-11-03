@@ -10,20 +10,20 @@ in RamblerTask/settings.py else use:
 
 API:
 
- * Get class:
+* Get class:
 
 URL: "calc_pickle/"
 TYPE: only POST
 REQUEST DATA: JSON {"f1": x1, "f2": x2, "f3": x3, "f4": x4} where type(xi) is float or integer. You can also pass strings convertable to float.
 
 
-2. Change pickle file
+* Change pickle file
 
 URL: "change_pickle/"
 TYPE: only GET;
 REQUEST DATA: <pickle> - name of the file without extension (for example "svm_iris_model" for "RamblerTask/pickles/svm_iris_model.pickle")
 
-3. Visualization
+* Visualization
 
 URL: "/"
 TYPE: GET
