@@ -14,8 +14,11 @@ in RamblerTask/settings.py else use:
 * Get class:
 
 URL: "calc_pickle/"
+
 TYPE: only POST
+
 REQUEST DATA: JSON {"f1": x1, "f2": x2, "f3": x3, "f4": x4} where type(xi) is float or integer. You can also pass strings convertable to float.
+
 RETURN: JSON {"class": <string result of .pickle execution>} in case of success. If something went wrong JSON {"error": <error message>} would be returned.
 
 * Change pickle file
